@@ -88,7 +88,9 @@ if (!empty($conditions)) {
 $sql = "SELECT auto.AutoID, auto.Mark, auto.Mudel, auto.Aasta, auto.Status, pilt.URL_photo
         FROM auto
         LEFT JOIN pilt ON auto.AutoID = pilt.AutoID
-        $where";
+        $where
+        ORDER BY auto.AutoID DESC";
+
 $result = $yhendus->query($sql);
 ?>
 
@@ -138,7 +140,9 @@ $result = $yhendus->query($sql);
             <option value="broneeritud" <?= ($_GET['status'] ?? '') === 'broneeritud' ? 'selected' : '' ?>>broneeritud</option>
             <option value="hooldus" <?= ($_GET['status'] ?? '') === 'hooldus' ? 'selected' : '' ?>>hooldus</option>
         </select>
-        <button type="submit">Otsi</button>
+        <a href="index.php" class="reset-button">Tühjenda</a>
+        <button type="submit" class="search-button">Otsi</button>
+
     </form>
 
     <?php if ($result && $result->num_rows > 0): ?>

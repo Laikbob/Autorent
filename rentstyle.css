@@ -336,7 +336,6 @@ footer {
 
 
 .search-form {
-    display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 18px;
@@ -346,6 +345,8 @@ footer {
     border-radius: 4px;
     font-size: 12px;
     padding: 8px 10px;
+    display: inline-block;
+
 }
 
 .search-form button {
@@ -379,6 +380,20 @@ select[name="new_status"] {
     transition: border-color 0.3s, box-shadow 0.3s;
     outline: none;
 }
+.reset-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.reset-button:hover {
+    background-color: #9a362c;
+}
+
 
 
 
