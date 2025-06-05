@@ -4,6 +4,9 @@ body {
     color: #b1ea1e;
     margin: 0;
     padding: 0;
+    background-image: url('carrent.jpg');
+    background-size: 100%;
+    background-position: center;
 }
 
 .main-container {
