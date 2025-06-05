@@ -1,7 +1,7 @@
 [Projekt Auto Rent](https://andreilebedev24.thkit.ee/WEB/WEBphp/rent/loginrent.php)
 <h2>Admin/User login </h2>
 <h3>
-Admin 
+Admin <br>
 User name: admin
 Password: admin
 
