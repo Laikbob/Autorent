@@ -1,7 +1,7 @@
 <?php if (isset($_GET['code'])) { die(highlight_file(__FILE__, 1)); } ?>
 <?php
 session_start();
-require('zoneconf.php');
+require('confrent.php');
 global $yhendus;
 
 $onadmin = $_SESSION['onadmin'] ?? 0;

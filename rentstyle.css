@@ -17,7 +17,7 @@ body {
 }
 
 .main-container h2, .container h2 {
-    color: #71ff05;
+    color: #f4f404;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     cursor: default;
@@ -43,7 +43,7 @@ body {
 
 .car-table th {
     background-color: #02070c;
-    color: #b1ea1e;
+    color: #f4f404;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
@@ -55,7 +55,7 @@ body {
 }
 
 .car-row:hover {
-    background-color: #71ff05;
+    background-color: #f4f404;
 }
 
 /* Фото строки */
@@ -109,7 +109,7 @@ body {
 /* Кнопка бронирования */
 button {
     background-color: #150c0c;
-    color: #71ff05;
+    color: #f4f404;
     padding: 8px 14px;
     border: none;
     border-radius: 4px;
@@ -122,7 +122,7 @@ button {
 }
 
 button:hover {
-    background-color: #b1ea1e;
+    background-color: #f4f404;
     color: black;
 }
 
@@ -201,7 +201,7 @@ img {
 
 .admin-panel input[type="submit"] {
     background-color: #020101;
-    color: #b1ea1e;
+    color: #f4f404;
     border: none;
     font-size: 15px;
     padding: 10px;
@@ -211,13 +211,13 @@ img {
 }
 
 .admin-panel input[type="submit"]:hover {
-    background-color: #b1ea1e;
+    background-color: #f4f404;
     color: black;
 }
 form input[name="logout"] {
     background-color: #000000;     /* Чёрный фон */
-    color: #FFD700;                /* Ярко-жёлтый текст */
-    border: 2px solid #FFD700;    /* Жёлтая рамка */
+    color: #f4f404;                /* Ярко-жёлтый текст */
+    border: 2px solid #f4f404;    /* Жёлтая рамка */
     padding: 10px 16px;
     font-size: 14px;
     font-weight: bold;
@@ -227,7 +227,7 @@ form input[name="logout"] {
 }
 
 form input[name="logout"]:hover {
-    background-color: #FFD700;    /* Жёлтый фон при наведении */
+    background-color: #f4f404;    /* Жёлтый фон при наведении */
     color: #000000;                /* Чёрный текст */
 }
 nav {
@@ -252,7 +252,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00;
+    color: #f4f404;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
@@ -261,13 +261,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ffcc00;
+    background-color: #f4f404;
     color: #000;
 }
 
 .success-message {
     background-color: #020101;
-    color: #b1ea1e;
+    color: #f4f404;
     padding: 12px;
     border: 1px solid #c3e6cb;
     border-radius: 8px;
@@ -305,22 +305,28 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    color: #b1ea1e;
+    color: #f4f404;
 }
 .search-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    margin-right: 10px;
+    border: 2px solid #151511;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 8px 10px;
 }
 
 .search-form input[type="text"], .search-form select {
     padding: 8px;
+    font-family: "Arial Black";
     background: rgba(48, 15, 15, 0.7);
-    color: #b1ea1e;
+    color: #f4f404;
     margin-right: 10px;
-    border: 1px solid #b1ea1e;
-    border-radius: 4px;
+    border: 1px solid #f4f404;
+    border-radius: 3px;
     font-size: 14px;
 }
 
@@ -328,20 +334,41 @@ footer {
     padding: 8px 10px;
 }
 
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+    margin-right: 10px;
+    border: 2px solid #f4f404;
+    background-color: #655a5a;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 8px 10px;
+}
+
 .search-form button {
-    padding: 8px 16px;
-    background-color: #050303;
+    padding: 5px 16px;
+    font-family: "Arial Black";
+    background-color: #151511;
     color: #b1ea1e;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* вот тут отталкиваем кнопку вправо */
 }
 
 .search-form button:hover {
     background-color: #b1ea1e;
-    color: black;
+    color: #151511;
 }
+
+
 select[name="new_status"] {
     padding: 6px 10px;
     font-size: 14px;
@@ -352,7 +379,6 @@ select[name="new_status"] {
     transition: border-color 0.3s, box-shadow 0.3s;
     outline: none;
 }
-
 
 
 
